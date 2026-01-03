@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --purple100: hsl(254, 88%, 90%);
+  --purple500: hsl(256, 67%, 59%);
+  --yellow100: hsl(31, 66%, 93%);
+  --yellow500: hsl(39, 100%, 71%);
+  --bodyGray: rgb(240, 240, 240);
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("/assets/fonts/DMSans-VariableFont_opszwght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("/assets/fonts/DMSans-VariableFont_opszwght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+body {
+  background-color: var(--bodyGray);
+}
+.container {
+  max-width: 100vw;
+  margin: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.container div {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+img {
+  max-width: 100%;
+  width: 80%;
+  height: auto;
+}
+h2 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  letter-spacing: -1px;
+  line-height: 1em;
+  font-size: 2.2rem;
+  padding: 0.4em 0;
+}
+figcaption {
+  font-size: 1.2rem;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  max-width: 80%;
+  margin: 10px auto;
+}
+
+.title {
+  background-color: var(--purple500);
+  font-size: 1.4rem;
+  color: white;
+  text-align: center;
+  padding: 1.5em;
+}
+
+.title h1 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  padding-bottom: 0.5em;
+  line-height: 1em;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.title .yellow-font {
+  color: var(--yellow500);
+}
+
+.title .italic {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.social {
+  text-align: left;
+  padding: 1em;
+  background-color: white;
+}
+.social img {
+  width: 100%;
+  padding-bottom: 1em;
+}
+
+.posting-schedule {
+  overflow: hidden;
+  background-color: var(--yellow500);
+  padding: 1em 3em 0 1em;
+  text-align: left;
+}
+
+.posting-schedule h2 {
+  padding-bottom: 0;
+}
+
+.posting-schedule figure {
+  transform: translateY(25px);
+}
+
+.social-media-post-schedule {
+  background-color: var(--purple100);
+  text-align: center;
+  padding: 1.4em 1em;
+}
+
+.social-media-post-schedule img {
+  transform: scale(1.1);
+  margin: 0.8em auto;
+}
+
+.follower-growth {
+  background-color: var(--purple500);
+  padding: 1.4em 1em;
+  text-align: center;
+}
+
+.follower-growth h2 {
+  color: white;
+  max-width: 80%;
+  margin: 10px auto;
+}
+
+.audience-growth {
+  background-color: white;
+  text-align: left;
+  padding: 1.4em 1em;
+}
+
+.audience-growth img {
+  padding: 1em 0;
+}
+.audience-growth figcaption {
+  margin-left: 0;
+}
+#zoomPercent {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: bolder;
+}
+
+.create-content {
+  background-color: var(--yellow100);
+  padding: 1.4em 1em;
+}
+#quicker {
+  color: var(--purple500);
+  font-family: "DM Sans", sans-serif;
+  font-style: italic;
+}
+#btn {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-size: 1.6rem;
+  font-weight: bolder;
+  color: var(--purple500);
+  padding: 0.6em 1.1em;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--yellow500);
+  display: flex;
+  align-items: center;
+  margin-top: 0.8em;
+}
+#svg-icon {
+  width: 1.4em;
+  height: 1.4em;
+  margin-left: 10px;
+}
+
+.ai-content {
+  background-color: var(--yellow500);
+  padding: 1.4em 1em;
+}
+
+.attribution {
+  width: 100%;
+  text-align: center;
+  margin: 10px auto;
+}
+.attribution a {
+  text-decoration: none;
+  color: var(--purple500);
+}
