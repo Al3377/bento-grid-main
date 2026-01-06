@@ -43,8 +43,6 @@ body {
 }
 
 .container div {
-  width: 100%;
-  height: auto;
   border-radius: 15px;
   padding: 1.4em 1em;
 }
@@ -214,26 +212,40 @@ figcaption {
     margin: 20px auto;
     display: grid;
     align-items: stretch;
-    width: 70vw;
+    width: 65vw;
+    max-height: 90vh;
     grid-template-columns: 0.8fr 1fr 1fr 0.8fr;
-    grid-template-rows: 1fr 0.8fr 0.8fr;
+    grid-template-rows: 1fr 0.7fr 0.8fr;
     gap: 30px;
   }
-  h2 {
-    font-size: 2.8rem;
-    padding-bottom: 10px;
-  }
   .container div {
-    width: auto;
+    padding: 0;
+  }
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h2 {
+    font-size: 2.4rem;
+    padding-bottom: 10px;
+    max-width: 80%;
+    padding-left: 0.4em;
   }
 
   figure img {
     width: auto;
     max-height: 100%;
+    padding: 20px;
   }
 
   figure {
     display: flex;
+  }
+
+  #zoomPercent {
+    font-size: 3em;
   }
 
   .item1 {
@@ -263,13 +275,10 @@ figcaption {
 
   .item4 figure {
     padding-left: 1em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    position: relative;
   }
-
-  #scale {
-    width: 100%;
+  .item4 figcaption {
+    text-align: left;
   }
 
   .item2 {
@@ -296,5 +305,10 @@ figcaption {
     grid-column: 3 / 5;
     grid-row: 3 / 4;
     display: flex;
+  }
+
+  .item5 h2 {
+    text-align: right;
+    max-width: 50%;
   }
 }
