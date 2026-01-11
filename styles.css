@@ -113,16 +113,11 @@ body {
   min-width: 0;
 }
 
-.title figure img {
-  max-width: 60%;
-}
-
 /* desktop */
 @media (min-width: 1024px) {
   .container {
-    width: 80vw;
-    height: 80vh;
     margin: 40px auto;
+    max-width: 70vw;
     display: grid;
     grid-template-columns: 25% 75%;
     grid-auto-rows: auto;
@@ -221,6 +216,13 @@ figcaption {
 /* ELEMENTS */
 .title {
   background-color: var(--purple500);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#stars {
+  width: 200px;
 }
 .social {
   background-color: white;
@@ -231,12 +233,12 @@ figcaption {
   padding-bottom: 0;
 }
 #calendar-figure {
-  padding-right: 100px;
   padding-top: var(--pading-top);
 }
 #calendar-img {
   height: auto;
-  width: 240px;
+  width: 340px;
+  padding-right: 100px;
 }
 .social-media-post-schedule {
   background-color: var(--purple100);
@@ -285,23 +287,83 @@ figcaption {
   width: 220px;
   height: auto;
 }
+
+.attribution {
+  max-width: 375px;
+  margin: 10px auto;
+  color: var(--purple100);
+  background-color: white;
+  border: 1px solid var(--yellow500);
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--purple500);
+  text-decoration: none;
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width: 1024px) {
-  .flex-column-start {
-    align-items: center;
-    justify-content: center;
-  }
-
-  .flex-column-center {
-    flex-direction: row;
+  .container {
+    max-width: 1000px;
+    max-height: 1000px;
   }
 
   h2 {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     line-height: 0.8;
   }
-  #calendar-img {
+
+  .create-content {
+    justify-content: center;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #social-links {
     width: 300px;
+  }
+
+  .social-media-post-schedule {
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  .social-media-post-schedule h2 {
+    padding-right: 10px;
+  }
+
+  .social-media-post-schedule figcaption {
+    text-align: left;
+  }
+
+  .image-bleed {
+    overflow: hidden;
+  }
+  .image-bleed img {
+    max-width: none;
+    max-height: none;
+  }
+  #calendar-img {
+    width: auto;
+    height: 160px;
+  }
+
+  #best-time-to-post-img {
+    width: 350px;
+  }
+
+  .follower-growth {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .attribution {
+    max-width: 375px;
+    margin: 10px auto;
   }
 }
