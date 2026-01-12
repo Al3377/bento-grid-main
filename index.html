@@ -14,13 +14,12 @@
 
     <title>Frontend Mentor | Bento grid</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="container grid-mobile">
-      <div class="subgrid grid-mobile" id="subgrid2">
-        <div class="item1 title padding border-radius">
+    <main class="container grid">
+      <div class="grid" id="subgrid2">
+        <div class="item1 title border-radius">
           <h1>
             Social Media <span class="yellow-font">10x</span>
             <span class="italic">Faster</span> with AI
@@ -32,7 +31,7 @@
               alt="five yellow stars"
               class="five-stars"
             />
-            <figcaption id="title-figcaption">
+            <figcaption class="light-purple-font">
               Over 4,000 5-star reviews
             </figcaption>
           </figure>
@@ -48,9 +47,7 @@
           </figure>
           <h2>Manage multiple accounts and platforms.</h2>
         </div>
-        <div
-          class="item3 image-bleed posting-schedule border-radius padding text-align-left"
-        >
+        <div class="item3 image-bleed posting-schedule border-radius padding">
           <h2>Maintain a consistent posting schedule.</h2>
           <figure id="calendar-figure ">
             <img
@@ -60,7 +57,9 @@
             />
           </figure>
         </div>
-        <div class="item4 social-media-post-schedule border-radius padding">
+        <div
+          class="item4 social-media-post-schedule border-radius padding image-bleed"
+        >
           <h2>Schedule to social media.</h2>
           <figure class="image-bleed">
             <img
@@ -74,9 +73,7 @@
             </figcaption>
           </figure>
         </div>
-        <div
-          class="item5 follower-growth padding border-radius flex-column-center"
-        >
+        <div class="item5 follower-growth padding border-radius">
           <figure>
             <img
               class="max-width-240"
@@ -102,7 +99,7 @@
           </figure>
         </div>
       </div>
-      <div class="subgrid grid-mobile" id="subgrid1">
+      <div class="subgrid grid" id="subgrid1">
         <div
           class="item7 create-content padding flex-column-start border-radius"
         >
@@ -130,7 +127,7 @@
             </svg>
           </button>
         </div>
-        <div class="item8 ai-content border-radius padding flex-column-start">
+        <div class="item8 ai-content border-radius padding">
           <h2>Write your content using AI.</h2>
           <figure>
             <img

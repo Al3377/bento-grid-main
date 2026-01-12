@@ -42,7 +42,7 @@
 /* Global Elements */
 img {
   max-width: 100%;
-  margin: 5px auto;
+  /*  margin: 5px auto; */
   height: auto;
   display: block;
   padding-top: var(--pading-top);
@@ -62,7 +62,7 @@ body {
 /* UTILITIES */
 
 .padding {
-  padding: 25px 20px;
+  padding: 16px 20px;
 }
 .font-color-purple {
   color: var(--purple500);
@@ -100,7 +100,7 @@ body {
   max-width: 95%;
   margin: 20px auto;
 }
-.grid-mobile {
+.grid {
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
@@ -108,16 +108,175 @@ body {
   gap: 1rem;
 }
 
-.grid-mobile > * {
+.grid > * {
   width: 100%;
   min-width: 0;
 }
 
-/* desktop */
+/* Typography */
+h1,
+h2,
+figcaption,
+button {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+}
+h1 {
+  line-height: 1;
+}
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+}
+
+h2 {
+  font-size: 1.8rem;
+  padding-top: var(--pading-top);
+  letter-spacing: -1px;
+  line-height: 0.9;
+}
+
+figcaption {
+  font-size: 18px;
+  text-align: center;
+}
+
+.yellow-font {
+  color: var(--yellow500);
+}
+
+.light-purple-font {
+  color: var(--purple100);
+}
+
+.italic {
+  font-style: italic;
+}
+
+/* ELEMENTS */
+.title {
+  background-color: var(--purple500);
+  display: flex;
+  flex-direction: column;
+  padding: 50px 35px;
+}
+.title figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#stars {
+  width: 200px;
+}
+.social {
+  background-color: white;
+}
+
+.posting-schedule {
+  background-color: var(--yellow500);
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  max-height: 230px;
+  overflow: hidden;
+}
+#calendar-figure {
+  padding-top: var(--pading-top);
+}
+#calendar-img {
+  height: auto;
+  width: 200px;
+}
+.social-media-post-schedule {
+  background-color: var(--purple100);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-media-post-schedule figure {
+  padding-top: var(--pading-top);
+  padding-bottom: var(--pading-bottom);
+  display: flex;
+  flex-direction: column;
+}
+
+.social-media-post-schedule figcaption {
+  padding: 20px;
+}
+
+.follower-growth {
+  background-color: var(--purple500);
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#zoomPercent {
+  font-size: 3rem;
+}
+
+.audience-growth {
+  background-color: white;
+}
+#profile-imgs {
+  width: 200px;
+}
+.create-content {
+  background-color: var(--yellow100);
+}
+
+#btn {
+  border: none;
+  max-width: 280px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  background-color: var(--yellow500);
+  padding: 15px 25px;
+  border-radius: 40px;
+  flex-grow: 0;
+  margin-top: 20px;
+}
+
+.ai-content {
+  background-color: var(--yellow500);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+#ai-chat-img {
+  width: 220px;
+  height: auto;
+}
+
+.attribution {
+  max-width: 375px;
+  margin: 10px auto;
+  color: var(--purple100);
+  background-color: white;
+  border: 1px solid var(--yellow500);
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--purple500);
+  text-decoration: none;
+}
+
+/* MEDIA QUERIES */
+
 @media (min-width: 1024px) {
   .container {
     margin: 40px auto;
-    max-width: 70vw;
+    max-width: 1000px;
+    max-height: 1000px;
     display: grid;
     grid-template-columns: 25% 75%;
     grid-auto-rows: auto;
@@ -172,142 +331,9 @@ body {
     grid-column: 1/2;
     grid-row: 1 / 2;
   }
-}
 
-/* Typography */
-h1,
-h2,
-figcaption,
-button {
-  font-family: "DM Sans", sans-serif;
-  font-weight: 500;
-}
-h1 {
-  line-height: 0.8;
-}
-h1 {
-  font-size: 3rem;
-  text-align: center;
-  color: white;
-}
-
-h2 {
-  font-size: 1.8rem;
-  padding-top: var(--pading-top);
-  letter-spacing: -1px;
-}
-
-figcaption {
-  font-size: 18px;
-  text-align: center;
-}
-
-#title-figcaption {
-  color: var(--purple100);
-}
-.yellow-font {
-  color: var(--yellow500);
-}
-
-.italic {
-  font-style: italic;
-}
-
-/* ELEMENTS */
-.title {
-  background-color: var(--purple500);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#stars {
-  width: 200px;
-}
-.social {
-  background-color: white;
-}
-
-.posting-schedule {
-  background-color: var(--yellow500);
-  padding-bottom: 0;
-}
-#calendar-figure {
-  padding-top: var(--pading-top);
-}
-#calendar-img {
-  height: auto;
-  width: 340px;
-  padding-right: 100px;
-}
-.social-media-post-schedule {
-  background-color: var(--purple100);
-}
-
-.social-media-post-schedule figcaption {
-  padding-top: var(--pading-top);
-  padding-bottom: var(--pading-bottom);
-}
-
-.follower-growth {
-  background-color: var(--purple500);
-  color: white;
-  text-align: center;
-}
-#zoomPercent {
-  font-size: 3rem;
-}
-
-.audience-growth {
-  background-color: white;
-}
-#profile-imgs {
-  width: 200px;
-}
-.create-content {
-  background-color: var(--yellow100);
-}
-
-#btn {
-  border: none;
-  max-width: 280px;
-  font-size: 1.4rem;
-  font-weight: 600;
-  background-color: var(--yellow500);
-  padding: 15px 25px;
-  border-radius: 40px;
-  flex-grow: 0;
-  margin-top: 20px;
-}
-
-.ai-content {
-  background-color: var(--yellow500);
-}
-#ai-chat-img {
-  width: 220px;
-  height: auto;
-}
-
-.attribution {
-  max-width: 375px;
-  margin: 10px auto;
-  color: var(--purple100);
-  background-color: white;
-  border: 1px solid var(--yellow500);
-  text-align: center;
-}
-
-.attribution a {
-  color: var(--purple500);
-  text-decoration: none;
-}
-
-/* MEDIA QUERIES */
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1000px;
-    max-height: 1000px;
+  h1 {
+    line-height: 1.1;
   }
 
   h2 {
@@ -317,6 +343,10 @@ figcaption {
 
   .create-content {
     justify-content: center;
+  }
+
+  .posting-schedule {
+    max-height: 240px;
   }
 
   .social {
@@ -331,14 +361,15 @@ figcaption {
   .social-media-post-schedule {
     padding-right: 0;
     padding-bottom: 0;
-  }
-
-  .social-media-post-schedule h2 {
-    padding-right: 10px;
+    align-items: start;
   }
 
   .social-media-post-schedule figcaption {
     text-align: left;
+    padding-left: 0;
+  }
+  .social-media-post-schedule figure {
+    max-width: 100%;
   }
 
   .image-bleed {
@@ -355,6 +386,10 @@ figcaption {
 
   #best-time-to-post-img {
     width: 350px;
+  }
+  .audience-growth figcaption {
+    padding-bottom: 30px;
+    line-height: 1.5;
   }
 
   .follower-growth {
