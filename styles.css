@@ -274,7 +274,7 @@ figcaption {
 
 @media (min-width: 1024px) {
   .container {
-    margin: 40px auto;
+    margin: 60px auto;
     max-width: 1000px;
     max-height: 1000px;
     display: grid;
